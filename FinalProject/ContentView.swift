@@ -16,6 +16,7 @@ struct ContentView: View {
             Text("FINAL PROJECT")
             Text("PUSH")
 //            almaz
+            // amalia
         }
         .padding()
     }
