@@ -15,6 +15,7 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("FINAL PROJECT")
             Text("PUSH")
+//            almaz
         }
         .padding()
     }
