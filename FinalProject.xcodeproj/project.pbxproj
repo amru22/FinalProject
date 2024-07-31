@@ -14,6 +14,7 @@
 		2DE2B7F82C53D36F005F61B7 /* FinalProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2B7F72C53D36F005F61B7 /* FinalProjectTests.swift */; };
 		2DE2B8022C53D36F005F61B7 /* FinalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2B8012C53D36F005F61B7 /* FinalProjectUITests.swift */; };
 		2DE2B8042C53D36F005F61B7 /* FinalProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2B8032C53D36F005F61B7 /* FinalProjectUITestsLaunchTests.swift */; };
+		BD0628ED2C5A765300DA8963 /* Energy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0628EC2C5A765300DA8963 /* Energy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		2DE2B7FD2C53D36F005F61B7 /* FinalProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE2B8012C53D36F005F61B7 /* FinalProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectUITests.swift; sourceTree = "<group>"; };
 		2DE2B8032C53D36F005F61B7 /* FinalProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD0628EC2C5A765300DA8963 /* Energy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Energy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				2DE2B7E62C53D36D005F61B7 /* FinalProjectApp.swift */,
 				2DE2B7E82C53D36D005F61B7 /* ContentView.swift */,
+				BD0628EC2C5A765300DA8963 /* Energy.swift */,
 				2DE2B7EA2C53D36F005F61B7 /* Assets.xcassets */,
 				2DE2B7EC2C53D36F005F61B7 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DE2B7E92C53D36D005F61B7 /* ContentView.swift in Sources */,
+				BD0628ED2C5A765300DA8963 /* Energy.swift in Sources */,
 				2DE2B7E72C53D36D005F61B7 /* FinalProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
