@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D806CE22C5B881800A88A2C /* homePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D806CE12C5B881800A88A2C /* homePage.swift */; };
+		2D806CE42C5B88D500A88A2C /* statsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D806CE32C5B88D500A88A2C /* statsPage.swift */; };
+		2D806CE82C5B892200A88A2C /* waterWaste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D806CE72C5B892200A88A2C /* waterWaste.swift */; };
+		2D806CEA2C5B897900A88A2C /* FoodWaste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D806CE92C5B897900A88A2C /* FoodWaste.swift */; };
+		2D806CEB2C5B898E00A88A2C /* foodWaste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D806CE52C5B88FC00A88A2C /* foodWaste.swift */; };
+		2D806CED2C5B8C0700A88A2C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D806CEC2C5B8C0700A88A2C /* Persistence.swift */; };
+		2D806CF02C5B8CDA00A88A2C /* FinalProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D806CEE2C5B8CDA00A88A2C /* FinalProject.xcdatamodeld */; };
 		2DE2B7E72C53D36D005F61B7 /* FinalProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2B7E62C53D36D005F61B7 /* FinalProjectApp.swift */; };
 		2DE2B7E92C53D36D005F61B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2B7E82C53D36D005F61B7 /* ContentView.swift */; };
 		2DE2B7EB2C53D36F005F61B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DE2B7EA2C53D36F005F61B7 /* Assets.xcassets */; };
@@ -41,6 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D806CE12C5B881800A88A2C /* homePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePage.swift; sourceTree = "<group>"; };
+		2D806CE32C5B88D500A88A2C /* statsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statsPage.swift; sourceTree = "<group>"; };
+		2D806CE52C5B88FC00A88A2C /* foodWaste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodWaste.swift; sourceTree = "<group>"; };
+		2D806CE72C5B892200A88A2C /* waterWaste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waterWaste.swift; sourceTree = "<group>"; };
+		2D806CE92C5B897900A88A2C /* FoodWaste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWaste.swift; sourceTree = SOURCE_ROOT; };
+		2D806CEC2C5B8C0700A88A2C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		2D806CEF2C5B8CDA00A88A2C /* FinalProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinalProject.xcdatamodel; sourceTree = "<group>"; };
 		2DE2B7E32C53D36D005F61B7 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE2B7E62C53D36D005F61B7 /* FinalProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectApp.swift; sourceTree = "<group>"; };
 		2DE2B7E82C53D36D005F61B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,16 +123,22 @@
 			isa = PBXGroup;
 			children = (
 				2DE2B7E62C53D36D005F61B7 /* FinalProjectApp.swift */,
+				2D806CEC2C5B8C0700A88A2C /* Persistence.swift */,
 				2DE2B7E82C53D36D005F61B7 /* ContentView.swift */,
+				2D806CE12C5B881800A88A2C /* homePage.swift */,
+				2D806CE32C5B88D500A88A2C /* statsPage.swift */,
+				2D806CE72C5B892200A88A2C /* waterWaste.swift */,
 				BD0628EC2C5A765300DA8963 /* Energy.swift */,
 				BDCEF6582C5A84C800A2885D /* QuizPage.swift */,
 				BDCEF65A2C5A84DA00A2885D /* QuizPage2.swift */,
 				BD0628EE2C5B830C00DA8963 /* fridgePage.swift */,
 				BD0628F02C5B835B00DA8963 /* addItemToFridge.swift */,
+				2D806CE52C5B88FC00A88A2C /* foodWaste.swift */,
 				BD0628F22C5B838100DA8963 /* coreDataForFridge.swift */,
 				BD0628F42C5B83AB00DA8963 /* waterPage.swift */,
 				2DE2B7EA2C53D36F005F61B7 /* Assets.xcassets */,
 				2DE2B7EC2C53D36F005F61B7 /* Preview Content */,
+				2D806CEE2C5B8CDA00A88A2C /* FinalProject.xcdatamodeld */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -144,6 +164,7 @@
 			children = (
 				2DE2B8012C53D36F005F61B7 /* FinalProjectUITests.swift */,
 				2DE2B8032C53D36F005F61B7 /* FinalProjectUITestsLaunchTests.swift */,
+				2D806CE92C5B897900A88A2C /* FoodWaste.swift */,
 			);
 			path = FinalProjectUITests;
 			sourceTree = "<group>";
@@ -278,15 +299,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D806CE42C5B88D500A88A2C /* statsPage.swift in Sources */,
 				2DE2B7E92C53D36D005F61B7 /* ContentView.swift in Sources */,
 				BD0628ED2C5A765300DA8963 /* Energy.swift in Sources */,
+				2D806CED2C5B8C0700A88A2C /* Persistence.swift in Sources */,
 				BDCEF65B2C5A84DA00A2885D /* QuizPage2.swift in Sources */,
 				2DE2B7E72C53D36D005F61B7 /* FinalProjectApp.swift in Sources */,
 				BDCEF6592C5A84C800A2885D /* QuizPage.swift in Sources */,
+				2D806CE22C5B881800A88A2C /* homePage.swift in Sources */,
 				BD0628F52C5B83AB00DA8963 /* waterPage.swift in Sources */,
 				BD0628F32C5B838100DA8963 /* coreDataForFridge.swift in Sources */,
 				BD0628EF2C5B830C00DA8963 /* fridgePage.swift in Sources */,
+				2D806CF02C5B8CDA00A88A2C /* FinalProject.xcdatamodeld in Sources */,
+				2D806CE82C5B892200A88A2C /* waterWaste.swift in Sources */,
 				BD0628F12C5B835B00DA8963 /* addItemToFridge.swift in Sources */,
+				2D806CEB2C5B898E00A88A2C /* foodWaste.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +331,7 @@
 			files = (
 				2DE2B8022C53D36F005F61B7 /* FinalProjectUITests.swift in Sources */,
 				2DE2B8042C53D36F005F61B7 /* FinalProjectUITestsLaunchTests.swift in Sources */,
+				2D806CEA2C5B897900A88A2C /* FoodWaste.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +638,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2D806CEE2C5B8CDA00A88A2C /* FinalProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2D806CEF2C5B8CDA00A88A2C /* FinalProject.xcdatamodel */,
+			);
+			currentVersion = 2D806CEF2C5B8CDA00A88A2C /* FinalProject.xcdatamodel */;
+			name = FinalProject.xcdatamodeld;
+			path = /Users/scholars/Documents/FinalProject/FinalProject/FinalProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2DE2B7DB2C53D36D005F61B7 /* Project object */;
 }

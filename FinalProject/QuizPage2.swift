@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct QuizPage2: View {
+    @AppStorage("score") var score: Int = 0
     
-    @Binding  var score: Int
     var body: some View {
        
         

@@ -11,7 +11,7 @@
 
         struct QuizPage: View {
             
-            @State  var score = 0
+            @AppStorage("score") var score: Int = 0
             
             var body: some View {
              
@@ -52,7 +52,7 @@
                             
                             
                             
-                            Text("Do you prefere walking to destinations?")
+                            Text("Do you prefer walking to destinations?")
                                 .font(.title3)
                                 .fontWeight(.medium)
                                 .background(Rectangle()
@@ -257,7 +257,7 @@
                                 
                             }
                             
-                            NavigationLink(destination: QuizPage2(score: $score)) {
+                            NavigationLink(destination: QuizPage2()) {
                                 Text("Next")
                                     .background(Rectangle()
                                         .cornerRadius(15)

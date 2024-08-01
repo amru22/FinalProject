@@ -6,10 +6,12 @@
 //
 import SwiftUI
 struct waterPage: View {
+    @AppStorage("score") var score: Int = 0
+    
   @State private var numOfPeople : String = ""
   @State private var numOfWashingCycles : String = ""
   @State private var numOfDishwasherCycles : String = ""
-  @State private var score : Int = 0
+//  @State private var score : Int = 0
   @State private var water: Double = 0.0
   @State private var timer: Timer?
   @State private var elapsedTime: Int = 0
