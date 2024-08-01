@@ -15,6 +15,10 @@
 		2DE2B8022C53D36F005F61B7 /* FinalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2B8012C53D36F005F61B7 /* FinalProjectUITests.swift */; };
 		2DE2B8042C53D36F005F61B7 /* FinalProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2B8032C53D36F005F61B7 /* FinalProjectUITestsLaunchTests.swift */; };
 		BD0628ED2C5A765300DA8963 /* Energy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0628EC2C5A765300DA8963 /* Energy.swift */; };
+		BD0628EF2C5B830C00DA8963 /* fridgePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0628EE2C5B830C00DA8963 /* fridgePage.swift */; };
+		BD0628F12C5B835B00DA8963 /* addItemToFridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0628F02C5B835B00DA8963 /* addItemToFridge.swift */; };
+		BD0628F32C5B838100DA8963 /* coreDataForFridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0628F22C5B838100DA8963 /* coreDataForFridge.swift */; };
+		BD0628F52C5B83AB00DA8963 /* waterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0628F42C5B83AB00DA8963 /* waterPage.swift */; };
 		BDCEF6592C5A84C800A2885D /* QuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEF6582C5A84C800A2885D /* QuizPage.swift */; };
 		BDCEF65B2C5A84DA00A2885D /* QuizPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEF65A2C5A84DA00A2885D /* QuizPage2.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +52,10 @@
 		2DE2B8012C53D36F005F61B7 /* FinalProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectUITests.swift; sourceTree = "<group>"; };
 		2DE2B8032C53D36F005F61B7 /* FinalProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BD0628EC2C5A765300DA8963 /* Energy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Energy.swift; sourceTree = "<group>"; };
+		BD0628EE2C5B830C00DA8963 /* fridgePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fridgePage.swift; sourceTree = "<group>"; };
+		BD0628F02C5B835B00DA8963 /* addItemToFridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addItemToFridge.swift; sourceTree = "<group>"; };
+		BD0628F22C5B838100DA8963 /* coreDataForFridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreDataForFridge.swift; sourceTree = "<group>"; };
+		BD0628F42C5B83AB00DA8963 /* waterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waterPage.swift; sourceTree = "<group>"; };
 		BDCEF6582C5A84C800A2885D /* QuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPage.swift; sourceTree = "<group>"; };
 		BDCEF65A2C5A84DA00A2885D /* QuizPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPage2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +113,10 @@
 				BD0628EC2C5A765300DA8963 /* Energy.swift */,
 				BDCEF6582C5A84C800A2885D /* QuizPage.swift */,
 				BDCEF65A2C5A84DA00A2885D /* QuizPage2.swift */,
+				BD0628EE2C5B830C00DA8963 /* fridgePage.swift */,
+				BD0628F02C5B835B00DA8963 /* addItemToFridge.swift */,
+				BD0628F22C5B838100DA8963 /* coreDataForFridge.swift */,
+				BD0628F42C5B83AB00DA8963 /* waterPage.swift */,
 				2DE2B7EA2C53D36F005F61B7 /* Assets.xcassets */,
 				2DE2B7EC2C53D36F005F61B7 /* Preview Content */,
 			);
@@ -271,6 +283,10 @@
 				BDCEF65B2C5A84DA00A2885D /* QuizPage2.swift in Sources */,
 				2DE2B7E72C53D36D005F61B7 /* FinalProjectApp.swift in Sources */,
 				BDCEF6592C5A84C800A2885D /* QuizPage.swift in Sources */,
+				BD0628F52C5B83AB00DA8963 /* waterPage.swift in Sources */,
+				BD0628F32C5B838100DA8963 /* coreDataForFridge.swift in Sources */,
+				BD0628EF2C5B830C00DA8963 /* fridgePage.swift in Sources */,
+				BD0628F12C5B835B00DA8963 /* addItemToFridge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

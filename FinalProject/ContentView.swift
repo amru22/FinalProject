@@ -9,19 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("FINAL PROJECT")
-            Text("PUSH")
-//            almaz
-            // amalia
+        NavigationStack {
+            /*@START_MENU_TOKEN@*/Text("Content")/*@END_MENU_TOKEN@*/
+            
+            NavigationLink(destination: fridgePage()) {
+                Text("Click Me")
+            }
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Text("FINAL PROJECT")
+                Text("PUSH")
+                //            almaz
+                // amalia
+            }
+            .padding()
         }
-        .padding()
     }
 }
-
 #Preview {
     ContentView()
 }
