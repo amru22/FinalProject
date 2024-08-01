@@ -28,6 +28,8 @@
 		BD0628F52C5B83AB00DA8963 /* waterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0628F42C5B83AB00DA8963 /* waterPage.swift */; };
 		BDCEF6592C5A84C800A2885D /* QuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEF6582C5A84C800A2885D /* QuizPage.swift */; };
 		BDCEF65B2C5A84DA00A2885D /* QuizPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEF65A2C5A84DA00A2885D /* QuizPage2.swift */; };
+		BDCEF6952C5B9FDF00A2885D /* startPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEF6942C5B9FDF00A2885D /* startPage.swift */; };
+		BDCEF6972C5BA01300A2885D /* intoQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCEF6962C5BA01300A2885D /* intoQuiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		BD0628F42C5B83AB00DA8963 /* waterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waterPage.swift; sourceTree = "<group>"; };
 		BDCEF6582C5A84C800A2885D /* QuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPage.swift; sourceTree = "<group>"; };
 		BDCEF65A2C5A84DA00A2885D /* QuizPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPage2.swift; sourceTree = "<group>"; };
+		BDCEF6942C5B9FDF00A2885D /* startPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startPage.swift; sourceTree = "<group>"; };
+		BDCEF6962C5BA01300A2885D /* intoQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intoQuiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 			children = (
 				2DE2B7E62C53D36D005F61B7 /* FinalProjectApp.swift */,
 				2D806CEC2C5B8C0700A88A2C /* Persistence.swift */,
+				BDCEF6942C5B9FDF00A2885D /* startPage.swift */,
+				BDCEF6962C5BA01300A2885D /* intoQuiz.swift */,
 				2DE2B7E82C53D36D005F61B7 /* ContentView.swift */,
 				2D806CE12C5B881800A88A2C /* homePage.swift */,
 				2D806CE32C5B88D500A88A2C /* statsPage.swift */,
@@ -304,11 +310,13 @@
 				BD0628ED2C5A765300DA8963 /* Energy.swift in Sources */,
 				2D806CED2C5B8C0700A88A2C /* Persistence.swift in Sources */,
 				BDCEF65B2C5A84DA00A2885D /* QuizPage2.swift in Sources */,
+				BDCEF6952C5B9FDF00A2885D /* startPage.swift in Sources */,
 				2DE2B7E72C53D36D005F61B7 /* FinalProjectApp.swift in Sources */,
 				BDCEF6592C5A84C800A2885D /* QuizPage.swift in Sources */,
 				2D806CE22C5B881800A88A2C /* homePage.swift in Sources */,
 				BD0628F52C5B83AB00DA8963 /* waterPage.swift in Sources */,
 				BD0628F32C5B838100DA8963 /* coreDataForFridge.swift in Sources */,
+				BDCEF6972C5BA01300A2885D /* intoQuiz.swift in Sources */,
 				BD0628EF2C5B830C00DA8963 /* fridgePage.swift in Sources */,
 				2D806CF02C5B8CDA00A88A2C /* FinalProject.xcdatamodeld in Sources */,
 				2D806CE82C5B892200A88A2C /* waterWaste.swift in Sources */,
