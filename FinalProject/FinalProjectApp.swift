@@ -9,11 +9,13 @@ import SwiftUI
 
 @main
 struct FinalProjectApp: App {
+    let persistenceController = PersistenceController.shared
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            startPage()
                 .modelContainer(for: coreDataForFridge.self)
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
