@@ -17,75 +17,98 @@ struct waterPage: View {
   @State private var elapsedTime: Int = 0
   @State private var isRunning: Bool = false
   var body: some View {
-    VStack {
-      TextField("Number of people living in your home:", text: $numOfPeople)
-        .textFieldStyle(RoundedBorderTextFieldStyle())
-        .padding(.horizontal, 22.318)
-      TextField("Number of washing machine cycles:", text: $numOfWashingCycles)
-        .textFieldStyle(RoundedBorderTextFieldStyle())
-        .padding(.horizontal, 22.318)
-      TextField("Number of dishwasher cycles:", text: $numOfDishwasherCycles)
-        .textFieldStyle(RoundedBorderTextFieldStyle())
-        .padding(.horizontal, 22.318)
-      Text(formatTime(elapsedTime))
-        .font(.largeTitle)
-        .padding()
-      HStack(spacing: 20) {
-        Button(action: startTimer) {
-          Text("Start")
-            .font(.title)
-            .padding()
-            .background(Color.green)
-            .foregroundColor(.white)
-            .cornerRadius(10)
-        }
-        .disabled(isRunning)
-        Button(action: stopTimer) {
-          Text("Stop")
-            .font(.title)
-            .padding()
-            .background(Color.red)
-            .foregroundColor(.white)
-            .cornerRadius(10)
-        }
-        .disabled(!isRunning)
-        Button(action: resetTimer) {
-          Text("Reset")
-            .font(.title)
-            .padding()
-            .background(Color.blue)
-            .foregroundColor(.white)
-            .cornerRadius(10)
-        }
-        .disabled(isRunning && elapsedTime == 0)
+      ZStack{
+          Color(.back)
+              .ignoresSafeArea()
+              .padding(-100)
+          VStack {
+              Text("Water")
+              
+                  .font(.system(size: 50))
+                  .fontWeight(.semibold)
+                  .foregroundColor(Color.black)
+                  .padding(.all, 16.622)
+                  .background(Rectangle()
+                    .padding(0.13)
+                     .foregroundColor(Color.box))
+                  .cornerRadius(40)
+                  .shadow(radius: 5)
+              Text("")
+              Text("")
+              Text("")
+              Text("")
+              Text("")
+              Text("")
+              TextField("Number of people living in your home:", text: $numOfPeople)
+                  .textFieldStyle(RoundedBorderTextFieldStyle())
+                  .padding(.horizontal, 22.318)
+              TextField("Number of washing machine cycles:", text: $numOfWashingCycles)
+                  .textFieldStyle(RoundedBorderTextFieldStyle())
+                  .padding(.horizontal, 22.318)
+              TextField("Number of dishwasher cycles:", text: $numOfDishwasherCycles)
+                  .textFieldStyle(RoundedBorderTextFieldStyle())
+                  .padding(.horizontal, 22.318)
+              Text(formatTime(elapsedTime))
+                  .font(.largeTitle)
+                  .padding()
+              HStack(spacing: 20) {
+                  Button(action: startTimer) {
+                      Text("Start")
+                          .font(.title)
+                          .padding()
+                          .background(Color.blue)
+                          .foregroundColor(.white)
+                          .cornerRadius(10)
+                  }
+                  .disabled(isRunning)
+                  Button(action: stopTimer) {
+                      Text("Stop")
+                          .font(.title)
+                          .padding()
+                          .background(Color.blue)
+                          .foregroundColor(.white)
+                          .cornerRadius(10)
+                  }
+                  .disabled(!isRunning)
+                  Button(action: resetTimer) {
+                      Text("Reset")
+                          .font(.title)
+                          .padding()
+                          .background(Color.blue)
+                          .foregroundColor(.white)
+                          .cornerRadius(10)
+                  }
+                  .disabled(isRunning && elapsedTime == 0)
+              }
+              Text("Score: \(score)")
+              Button(action: {
+                  self.updateScore()
+              }) {
+                  Text("Calculate Score")
+                      .font(.title)
+                      .padding()
+                      .background(Color.blue)
+                      .foregroundColor(.white)
+                      .cornerRadius(10)
+              }
+              Text("You have used approximately \(water, specifier: "%.2f") litres of water")
+                  .font(.body)
+                  .fontWeight(.regular)
+                  .multilineTextAlignment(.center)
+              Button(action: {
+                  self.calculateWaterUsage()
+              }) {
+                  Text("Calculate Water Usage")
+                      .font(.title)
+                      .padding()
+                      .background(Color.blue)
+                      .foregroundColor(.white)
+                      .cornerRadius(10)
+              }
+          }
       }
-      Text("Score: \(score)")
-      Button(action: {
-        self.updateScore()
-      }) {
-        Text("Calculate Score")
-          .font(.title)
-          .padding()
-          .background(Color.blue)
-          .foregroundColor(.white)
-          .cornerRadius(10)
-      }
-      Text("You have used approximately \(water, specifier: "%.2f") litres of water")
-        .font(.body)
-        .fontWeight(.regular)
-        .multilineTextAlignment(.center)
-      Button(action: {
-        self.calculateWaterUsage()
-      }) {
-        Text("Calculate Water Usage")
-          .font(.title)
-          .padding()
-          .background(Color.blue)
-          .foregroundColor(.white)
-          .cornerRadius(10)
-      }
-    }
-    .padding()
+      .padding()
+     
   }
   func startTimer() {
     isRunning = true
@@ -121,29 +144,29 @@ struct waterPage: View {
   func calculateScoreFromShower(tempElapsedTime: Int) -> Int {
     let newMinutes = tempElapsedTime / 60
     if newMinutes < 7 {
-      return score + (7 - newMinutes)
+      return (7 - newMinutes)
     } else if newMinutes > 7 {
-      return score - (newMinutes - 7)
+      return (newMinutes - 7)
     }
-    return score
+    return 0
   }
   func calculateScoreFromWashingMachine(tempWashingMachine: Int, people: Int) -> Int {
     if tempWashingMachine - people > 6 {
-      return score - ((tempWashingMachine - people) - 6)
+      return  -((tempWashingMachine - people) - 6)
     }
     if tempWashingMachine - people < 6 {
-      return score + (6 - (tempWashingMachine - people))
+      return  (6 - (tempWashingMachine - people))
     }
-    return score
+    return 0
   }
   func calculateScoreFromDishwasher(tempDishWasher: Int, people: Int) -> Int {
     if tempDishWasher - people > 2 {
-      return score - ((tempDishWasher - people) - 2)
+      return  -((tempDishWasher - people) - 2)
     }
     if tempDishWasher - people < 2 {
-      return score + (2 - (tempDishWasher - people))
+      return (2 - (tempDishWasher - people))
     }
-    return score
+    return 0
   }
   func calculateWaterUsage() {
     if let dishwasherCycles = Double(numOfDishwasherCycles),
@@ -155,6 +178,7 @@ struct waterPage: View {
     }
   }
 }
+    
 struct waterPage_Previews: PreviewProvider {
   static var previews: some View {
     waterPage()

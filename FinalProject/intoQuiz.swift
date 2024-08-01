@@ -61,7 +61,7 @@ struct intoQuiz: View {
                     Text("")
                     Text("")
                    
-                    NavigationLink(destination: QuizPage()) {
+                    NavigationLink(destination: newQuizPage()) {
                         Text("Quiz")
                         
                             .font(.title)

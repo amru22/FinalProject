@@ -10,14 +10,15 @@ struct statsPage: View {
 //  @Binding var waterScore : Int
 //  @Binding var foodScore : Int
 //  @Binding var quizScore : Int
-  @State var waterScore = 13
-  @State var foodScore = 4
-  @State var quizScore = 1
-  @State var overallScore = 0
+//  @State var waterScore = 13
+//  @State var foodScore = 4
+//  @State var quizScore = 1
+//  @State var overallScore = 0
   @State private var foodColour = ""
   @State private var waterColour = ""
   @State private var bgColour = ""
   @State private var progress : Double = 0.0
+    @State private var shownScore : Int = 0
   var body: some View {
     NavigationStack {
       ZStack {
@@ -40,12 +41,27 @@ struct statsPage: View {
         }
         .position(CGPoint(x: 50.0, y: 380.0))
         .onAppear {
-          overallScore = foodScore + waterScore
-          self.progress = Double(overallScore)/20
+            if score < 0 {
+                shownScore = 0
+            } else {
+                shownScore = score % 50
+            }
+          self.progress = Double(shownScore)/50
         }
+        
+          Text("\((50 * ((score/50)+1)))")
+                 .font(.system(size:20))
+                 .background(Rectangle()
+                  .frame(width: 50, height: 50)
+                  .cornerRadius(12)
+                  .foregroundColor(.yellow)
+                  .opacity(0.7))
+                 .position(CGPoint(x: 50.0, y: 55.0))
+          
         VStack {
 //         overall score
-          Text("Overall score")
+          Text("Overall score: \(score)")
+                .font(.system(size: 28))
             .background(Rectangle()
               .frame(width: 250.0, height: 50)
               .cornerRadius(12)

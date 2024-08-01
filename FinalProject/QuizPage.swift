@@ -105,7 +105,7 @@
                             }
                             
                             
-                            Text("Do you find yourself throwing away expired food monthly?")
+                            Text("Do you find yourself throwing\n away expired food monthly?")
                                 .font(.title3)
                                 .fontWeight(.medium)
                                 .background(Rectangle()
@@ -156,7 +156,7 @@
                             }
                             
                             
-                            Text("Do you avoid single-use plastic bags and use reusable bags instead? ")
+                            Text("Do you avoid single-use plastic\n bags and use reusable bags instead? ")
                                 .font(.title3)
                                 .fontWeight(.medium)
                                 .background(Rectangle()
@@ -209,7 +209,7 @@
                                 
                             }
                             
-                            Text("Do you recycle your household waste regularly")
+                            Text("Do you recycle your household\n waste regularly")
                                 .font(.title3)
                                 .fontWeight(.medium)
                                 .background(Rectangle()

@@ -12,35 +12,39 @@ struct addItemToFridge: View {
   @State private var expirationDate: String = ""
   @Binding var addItem: Bool
   @Environment(\.modelContext) var modelContext
-  var body: some View {
-    VStack {
-      Text("New Item:")
-        .font(.title)
-        .fontWeight(.bold)
-      TextField("Enter name of food:", text: $coreDataForFridge.name)
-        .padding()
-        .background(Color(.systemGroupedBackground))
-        .cornerRadius(15)
-        .padding()
-      TextField("Enter Expiration Date as dd/mm/yy:", text: $coreDataForFridge.expirationDate)
-        .padding()
-        .background(Color(.systemGroupedBackground))
-        .cornerRadius(15)
-        .padding()
-      Button {
-  addItemToList()
-        self.addItem = false
-      } label: {
-        Text("Save")
-          .padding()
-          .background(Color.blue)
-          .foregroundColor(.white)
-          .cornerRadius(10)
-      }
-      .padding()
+    var body: some View {
+        ZStack{
+            Color(.lightSIlver)
+                .ignoresSafeArea()
+            VStack {
+                Text("New Item:")
+                    .font(.title)
+                    .fontWeight(.bold)
+                TextField("Enter name of food:", text: $coreDataForFridge.name)
+                    .padding()
+                    .background(Color(.systemGroupedBackground))
+                    .cornerRadius(15)
+                    .padding()
+                TextField("Enter Expiration Date as dd/mm/yy:", text: $coreDataForFridge.expirationDate)
+                    .padding()
+                    .background(Color(.systemGroupedBackground))
+                    .cornerRadius(15)
+                    .padding()
+                Button {
+                    addItemToList()
+                    self.addItem = false
+                } label: {
+                    Text("Save")
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                .padding()
+            }
+            .padding()
+        }
     }
-    .padding()
-  }
   func addItemToList(){
     let foodType = FinalProject.coreDataForFridge(name: coreDataForFridge.name, expirationDate: coreDataForFridge.expirationDate)
     //had to use finalPorject
